@@ -32,8 +32,8 @@ function calculateTotal() {
     // 4. Update the display element
     const resultElement = document.getElementById('totalResult');
     resultElement.innerHTML = `
-        <span>Total Expenditure:</span>
-        <span>$${totalAmount.toFixed(2)}</span>
+        <span class="font-semibold text-gray-700">Total Expenditure:</span>
+        <span class="text-3xl font-bold text-indigo-600 ml-2">$${totalAmount.toFixed(2)}</span>
     `;
 
     // Optional: Clear the input fields after calculation for fresh entry
