@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Expenditure Tracker</title>
+</head>
+<body>
+    <!-- Main Card Container -->
+    <div>
+        <h1>
+            🛒 Simple Grocery Tracker
+        </h1>
+        <p>
+            Enter the cost of your purchased grocery items below.
+        </p>
+        <!-- Input Fields -->
+        <div>
+            <!-- Grocery Item 1 -->
+            <div>
+                <label for="grocery1">
+                    Enter first grocery amount ($)
+                </label>
+                <input type="number" id="grocery1" placeholder="e.g., 25.50"
+                       min="0" step="0.01">
+            </div>
+            <!-- Grocery Item 2 -->
+            <div>
+                <label for="grocery2">
+                    Enter second grocery amount ($)
+                </label>
+                <input type="number" id="grocery2" placeholder="e.g., 12.99"
+                       min="0" step="0.01">
+            </div>
+            <!-- Grocery Item 3 -->
+            <div>
+                <label for="grocery3">
+                    Enter third grocery amount ($)
+                </label>
+                <input type="number" id="grocery3" placeholder="e.g., 7.25"
+                       min="0" step="0.01">
+            </div>
+        </div>
+        <!-- Calculation Button -->
+        <button onclick="calculateTotal()"
+            Calculate Total Expenditure
+        </button>
+
+        <!-- Result Display Area -->
+        <div id="totalResult">
+            <span>Total will appear here after calculation.</span>
+        </div>
+
+    </div>
+
+</body>
+</html>
